@@ -17,7 +17,10 @@ Software: Python 3.7.6   Jupyter Notebook 6.4.8
   -	Average math and reading scores for each grade level from each school
   -	Scores by school spending per student, by school size, and by school type<br/>
 ### Results of Analysis
-Let's describe the analysis results of merics below:
+In this challenge, the school district analysis are based on two scripts I wrote:<br/>
+1.PyCitySchools_practice_testing.ipynb: is the script before 9th grade scores being replaced.<br/>
+2.PyCitySchools_Challenge.ipynb:        is the script after 9th grade scores being replaced.<br/>
+I'll analysize the data based on the output of those two scripts. Let's describe the analysis results of merics below:
 #### District summary
 In order to better comparing the slight changes between the two pictures, I choose the unformatted dataframes to show the difference:<br/>
 District summary before changes:<br/>
@@ -68,12 +71,12 @@ Since the scores by school spending per student shows no changes after rounding(
 ![9 school type before](https://user-images.githubusercontent.com/107179765/177900043-77708753-f0c5-4439-a121-cc594f083c6d.png)<br/>
    Scores by school type after changes:<br/>
 ![9 school type after](https://user-images.githubusercontent.com/107179765/177900058-e29fc9d3-590b-4fe6-aa99-56c128a5de56.png)<br/>
-Through the data, it is almost negligent when the 9th grade scores are changed with NaN when it comes to scores by spending per student, by school size, and by school type.
+Through the data we can see that, it is almost negligent when the 9th grade scores are changed with NaN when it comes to scores by spending per student, by school size, and by school type.
 ## Summary
-Overall, there wasn't too much great changes after replacing the 9th grade reading and math scores at Thomas High School with NaN. Still there are four changes need to pay attention.
-
-1. District Summary data frame: The average math and reading scores as well as the percentage passing drops slightly. This shows that the ninth-graders had an overall positive impact on the schools results.
-2. Top school performance data frame: Thomas High School remains the second highest performing school when it comes to the percentage of overall passing students. However, the overall passing percentage drops by around .2% bringing the school closer to the third highest performing school, Griffin High School.
-3. Scores by grade data frame: Thomas High School can not be compared to the other schools in the 9th grade column due to the NaN value. However, the other grades can still be analyzed using this data frame.
-4. Scores by grade, school spending, school size, and school type data frames: The impact when changing the ninth grade scores was negligent. The analysis remains the relatively the same and therefore can be considered to be unchanged when it comes to analyzing the data with or without the ninth-grade scores.
+The student number of 9th grade Thomas High School is 461, the student number of Thomas High School is 1,635, while the total student number of all schools is 39,170. Compare to the total student number, the number of student whose scores need to be replaced is only a small portion of the total number, which means only 1.17% of total students had their scores being replaced.<br/> 
+Overall, as the results shows, there wasn't too much great changes after replacing the 9th grade reading and math scores at Thomas High School with NaN. Let's talk about these changes briefly. 
+1. In the district summary of all the schools, the average math and reading scores as well as the percentage passing dropped slightly. This shows that the ninth grade of Thomas High School had an overall positive impact on the total school results.
+2. When it comes to Thomas High School, the average math scores as well as the percentage passing also dropped slightly, except for the average reading scores. But Thomas High School remains the No.2 placement of the top 5 performing schools. Interestingly, all of the top 5 performing schools are charter, while all of the bottom 5 performing schools are district.
+3. After the scores of 9th grade being replaced, other grades of Thomas High School can still be analyzed with the average scores and percentage passing separately.
+4. The impact on school spending, school size and school type analysis is negligent after changing the ninth grade scores. But from the chart we can see something interesting: a). the more each school spending on per student, the lower overall passing percentage they got. b). medium size of schools have the highest overall passing percentage. c). charter schools better performing than district schools, which we can also conclude from the top 5 and bottom 5 performing schools.
 
